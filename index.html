@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/styles.css">
     <title>Welcome</title>
 </head>
@@ -11,8 +14,55 @@
     <div class="container">
         <h1>Seja bem vindo</h1>
         <h3>O que gostaria de cadastrar ?</h3>
+    </div>
+    <div class="btn-container">
         <button class="client">Cliente</button>
         <button class="product">Produto</button>
     </div>
+
+    <div class="client-container hidden">
+        <div class="client-form">
+            <h1>Cadastre os dados do cliente:</h1>
+            <form class="form" action="">
+                <label for="name">Nome</label>
+                <input type="text" id="name" name="name" required>
+                <label for="name">Email</label>
+                <input type="email" id="email" name="email" required>
+                <label for="name">Data de Nascimento</label>
+                <input type="date" id="birth" name="date" required>
+                <label for="name">Telefone</label>
+                <input type="text" id="tel" name="tel" required>
+                <label for="name">Cidade</label>
+                <input type="text" id="city" name="city" required>
+                <label for="name">Estado</label>
+                <input type="text" id="state" name="state" required>
+                <label for="name">Endereço</label>
+                <input type="text" id="address" name="address" required>
+                <input type="submit" id="submit-client" value="Cadastrar">
+            </form>
+        </div>
+    </div>
+
+    <div class="product-container hidden">
+        <div class="product-form">
+            <h1>Cadastre os dados do produto:</h1>
+            <form action="">
+                <label for="product">Nome</label>
+                <input type="text" id="product" name="product" required>
+                <label for="name">Marca</label>
+                <input type="text" id="brand" name="brand" required>
+                <label for="name">Cor</label>
+                <input type="text" id="color" name="color" required>
+                <label for="name">Preço</label>
+                <input type="number" id="price" name="price" required>
+                <label for="name">Código de referência</label>
+                <input type="text" id="code" name="code" required>
+                <label for="name">Data da Compra</label>
+                <input type="date" id="date" name="date" required>
+                <input type="submit" id="submit-product" value="Cadastrar">
+            </form>
+        </div>
+    </div>
+    <script src="./js/main.js"></script>
 </body>
 </html>

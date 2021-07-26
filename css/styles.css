@@ -1,6 +1,93 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(to right, #0f2027 , #203a43, #2c5364);
+    color: #f2f2f2;
+}
+
 .container {
     display: flex;
     flex-direction: column;
     margin: 0 auto;
     text-align: center;
+}
+
+.btn-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 50%;
+    margin: 0 auto;
+    gap: 1rem;
+}
+
+.btn-container button {
+    border-radius: .5rem;
+    border-style: none;
+    padding: 1rem 2.5rem;
+    font-size: 1rem;
+    font-weight: 700;
+    margin: 0 auto;
+    width: 100%;
+    transition: filter 150ms ease-in;
+}
+
+input#submit {
+    transition: filter 150ms ease-in;
+}
+
+.btn-container button:hover,
+input#submit:hover {
+    cursor: pointer;
+    filter: brightness(.5);
+}
+
+
+
+.client-container.hidden {
+    display: none;
+    visibility: hidden;
+}
+
+.client-container {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 90%;
+}
+
+.product-container.hidden {
+    visibility: hidden;
+}
+
+.product-container {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 90%;
+}
+
+.client-form input,
+.product-form input {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: .5rem auto;
+    width: 100%;
+    padding: .5rem;
+}
+
+#birth,
+#date {
+    flex-direction: row;
+}
+
+#submit-client,
+#submit-product {
+    margin-left: .5rem;
+    padding: 1rem 2.5rem;
+    border-radius: .5rem;
+    border-style: none;
+    font-size: 1rem;
+    font-weight: 800;
 }
